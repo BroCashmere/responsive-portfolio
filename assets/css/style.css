@@ -110,8 +110,9 @@ footer {
   color: #ccc;
   text-align: center;
   background:grey;
-  border-bottom: 10px solid lightblue;
+  border-bottom:10px solid lightblue;
   height: 50px;
+  bottom: 0;
 }
 
 h3, h2 {
@@ -134,7 +135,7 @@ h3, h2 {
   opacity: 0.85;
   max-width: 960px;
   padding: 20px;
-  margin: 0 0 40px;
+  margin: 0 0 30px;
   background: #fff;
   border: 1px solid #ddd;
 }
@@ -268,6 +269,7 @@ input[type=submit] {
   }
 
   .footer {
+  
     width: 100%;
     padding: 30px 0 30px;
   }
