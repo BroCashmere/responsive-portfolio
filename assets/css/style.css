@@ -225,97 +225,105 @@ input[type=submit] {
   border: 0 none;
 }
 
-@media screen and (max-width: 980px) {
- 
-/*index.html*/
+@media only screen and (max-width: 980px) {
+  .container {
+    max-width: 768px;
 
-  .main-section {
-    margin-top: 20px;
-    width: 70%;
+    /* Box-model */
+    padding: 0 20px;
   }
 
-/*portfolio.html*/
-
-  #logo {
-    margin-left: 20px;
+  main.container {
+    padding-top: 130px;
   }
 
   .main-section {
-    margin-top: 20px;
-    margin-left: 20px;
+    max-width: 420px;
   }
 
-  nav {
-    margin-right: 40px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-
-/*index.html*/
-
-  .main-section {
-    margin-top: 20px;
-    margin-left: 20px;
-    width: 95%;
-  }
-
-  #logo {
-    margin-left: 20px;
-  }
-
-  nav {
-    margin-right: 20px;
-  }
-
-  .footer {
-  
+  .work {
     width: 100%;
-    padding: 30px 0 30px;
-  }
-
-  header {
-    position: static;
-  }
-
-/*portfolio.html*/
-
-}
-
-@media screen and (max-width: 640px) {
-
-/*index.html*/
-
-  #logo {
-    width: 100%;
-    margin-left: 0px;
-    }
-
-  nav {
-    margin: 15px 175px 15px 100px;
-  }
-
-  .main-section {
-    margin-top: 100px;
   }
 
   .auth-image {
     width: 100%;
-    margin-bottom: 10px
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-section,
+  .sidebar {
+    max-width: 100%;
   }
 
-  header {
-    position: static;
+  main {
+    overflow: auto;
   }
-
-/*portfolio.html*/
 
   .work {
-    width:100%;
+    /* Box-model */
+    width: 47%;
+
+    /* Positioning */
+    margin-bottom: 10px;
   }
 
-  header {
+  .work:nth-child(even) {
+    margin-right: 0;
+  }
+
+  .work:nth-child(odd) {
+    float: right;
+  }
+
+  .auth-image {
+    width: 50%;
+  }
+
+  .sidebar {
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  #masthead {
+    /* Positioning */
     position: static;
+    margin-bottom: 20px;
   }
 
+  header .container {
+    padding: 0;
+  }
+
+  main.container {
+    padding-top: 0;
+  }
+
+  #logo,
+  .work,
+  .auth-image {
+    width: 100%;
+  }
+
+  nav {
+    /* Box-model */
+    width: 100%;
+
+    /* Positioning */
+    margin: 15px 0;
+
+    /* Typography */
+    text-align: center;
+  }
+
+  nav a {
+    /* Box-model */
+    width: 30%;
+    padding-left: 0;
+
+    /* Positioning */
+    margin-left: 0;
+  }
 }
